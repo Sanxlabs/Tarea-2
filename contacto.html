@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <a href="info_personal.html">Información Personal</a>
+        <a href="info_academica.html">Formación Académica</a>
+        <a href="experiencia.html">Experiencia Laboral</a>
+        <a href="otros.html">Otros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        <form action="procesar_formulario.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo">
+                    <option value="consulta">Consulta</option>
+                    <option value="oferta">Oferta Laboral</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="suscripcion" name="suscripcion" value="suscripcion">
+                <label for="suscripcion">Suscribirse al boletín</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="contacto_telefono" name="preferencia" value="telefono">
+                <label for="contacto_telefono">Contactar por teléfono</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="email_pref" name="preferencia" value="email" checked>
+                <label for="email_pref">Contactar por correo electrónico</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <a href="contacto.html">Contacto</a>
+        <p>Derechos reservados © 2024</p>
+    </footer>
+</body>
+</html>
